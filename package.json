@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/lie16/git-hooks-nodejs#readme",
   "devDependencies": {
-    "jest": "^26.4.0",
-    "pre-commit": "^1.2.2"
+    "husky": "^4.2.5",
+    "jest": "^26.4.0"
   },
-  "pre-commit" :  [
-    "test"
-  ] 
+  "husky": {
+    "hooks":{
+      "pre-commit": "npm test"
+    }
+  }
 }
